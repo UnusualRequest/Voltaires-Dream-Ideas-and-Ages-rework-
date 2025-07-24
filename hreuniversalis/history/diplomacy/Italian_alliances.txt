@@ -131,13 +131,15 @@ vassal = {
 }
 
 #overlord
-vassal = {
+dependency = {
+	subject_type = trade_protectorate
 	first = PIS
 	second = GLL
 	start_date = 1207.1.1
 	end_date = 1288.1.1
 }
-vassal = {
+dependency = {
+	subject_type = trade_protectorate
 	first = PIS
 	second = COR
 	start_date = 1247.1.1

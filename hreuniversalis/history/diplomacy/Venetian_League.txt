@@ -6,42 +6,48 @@ march = {
 	end_date = 1066.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type = trade_protectorate
 	first = VEN
 	second = NAX
 	start_date = 1418.1.1
 	end_date = 1579.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type = trade_protectorate
 	first = VEN
 	second = NGR
 	start_date = 1390.1.1
 	end_date = 1479.1.25
 }
 
-vassal = {
+dependency = {
+	subject_type = trade_protectorate
 	first = VEN
 	second = ATH
 	start_date = 1395.1.1
 	end_date = 1402.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type = trade_protectorate
 	first = VEN
 	second = CRT
 	start_date = 1212.1.1
 	end_date = 1282.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type = trade_protectorate
 	first = VEN
 	second = CRT
 	start_date = 1299.4.28
 	end_date = 1363.8.1
 }
 
-vassal = {
+dependency = {
+	subject_type = trade_protectorate
 	first = VEN
 	second = CRT
 	start_date = 1368.1.1
@@ -56,15 +62,15 @@ guarantee = {
 }
 
 #Genoan League members
-
-vassal = {
+dependency = {
+	subject_type = trade_protectorate
 	first = GEN
 	second = TSA
 	start_date = 1376.1.1
 	end_date = 1456.1.1
 }
-
-vassal = {
+dependency = {
+	subject_type = trade_protectorate
 	first = GEN
 	second = LBO
 	start_date = 1355.1.1
