@@ -16,3 +16,85 @@ add_army_professionalism = 0.05
 		adm = 2
 	}
 }
+1305.1.1 = {
+	monarch = {
+		name = "Nallo"
+		dynasty = "Trinci"
+		dip = 2
+		mil = 2
+		adm = 2
+	}
+}
+1318.1.1 = {
+	monarch = {
+		name = "Ugolino I"
+		dynasty = "Trinci"
+		dip = 2
+		mil = 2
+		adm = 2
+	}
+}
+1336.1.1 = {
+	monarch = {
+		name = "Corrado I"
+		dynasty = "Trinci"
+		dip = 2
+		mil = 2
+		adm = 2
+	}
+}
+1341.1.1 = {
+	monarch = {
+		name = "Ugolino II"
+		dynasty = "Trinci"
+		dip = 2
+		mil = 2
+		adm = 2
+	}
+}
+1349.1.1 = {
+	monarch = {
+		name = "Trincia"
+		dynasty = "Trinci"
+		dip = 2
+		mil = 2
+		adm = 2
+	}
+}
+1377.1.1 = {
+	monarch = {
+		name = "Corrado II"
+		dynasty = "Trinci"
+		dip = 2
+		mil = 2
+		adm = 2
+	}
+}
+1386.1.1 = {
+	monarch = {
+		name = "Ugolino III"
+		dynasty = "Trinci"
+		dip = 2
+		mil = 2
+		adm = 2
+	}
+}
+1415.1.1 = {
+	monarch = {
+		name = "Niccolò"
+		dynasty = "Trinci"
+		dip = 2
+		mil = 2
+		adm = 2
+	}
+}
+1421.1.10 = {
+	monarch = {
+		name = "Corrado III"
+		dynasty = "Trinci"
+		dip = 2
+		mil = 2
+		adm = 2
+	}
+}
+#1439.9.8 to PAP

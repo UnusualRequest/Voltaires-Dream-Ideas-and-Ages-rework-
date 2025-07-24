@@ -35,7 +35,7 @@ discovered_by = muslim
 	controller = FLG
 	remove_core = XPR
 }
-1439.1.1 = {
+1439.9.8 = {
 	owner = PAP
 	controller = PAP
 	remove_core = FLG
