@@ -33,14 +33,21 @@ sjk_subjugation_of_the_caliph_mission = {
 	land_morale = 0.05
 }
 sjk_islam_in_baghdad_mission = {
-	yearly_corruption = -0.1
-	advisor_cost = -0.1
+	stability_cost_modifier = -0.15
+}
+sjk_islam_in_baghdad_mission2 = {
+	advisor_pool = 1
+}
+sjk_islam_in_baghdad_mission3 = {
+	army_tradition_decay = -0.01
 }
 sjk_the_islamic_heartland_mission = {
 	manpower_in_true_faith_provinces = 0.1
 }
 sjk_facilitate_urban_growth_mission = {
-	development_cost = -0.1
+	local_production_efficiency = 0.15
+	local_development_cost = -0.05
+	trade_value_modifier = 0.15
 }
 sjk_islamic_architecture_mission = {
 	build_cost = -0.1
@@ -55,7 +62,15 @@ sjk_splendor_of_baghdad_mission = { #Province
 	prestige = 0.5
 }
 sjk_expansion_of_islam_mission = {
-	manpower_in_true_faith_provinces = 0.2
+	manpower_in_true_faith_provinces = 0.15
+	enforce_religion_cost = -0.25
+}
+sjk_expansion_of_islam_mission2 = {
+	reverse_relation_with_same_religion = 20
+	diplomats = 1
+}
+sjk_expansion_of_islam_mission3 = {
+	missionary_maintenance_cost = -0.25
 	tolerance_own = 2
 }
 sjk_trade_in_baghdad_mission = {
@@ -154,4 +169,7 @@ sjk_control_of_the_beyliks_mission = {
 sjk_control_of_the_caspian_mission = {
 	prestige = 0.5
 }
-
+sjk_fortify_the_round_city_mission = {
+	idea_cost = -0.05
+	embracement_cost = -0.025
+}
