@@ -126,8 +126,8 @@ revolt_of_the_earls = {
 			100 = revolt_of_the_earls.4
 			100 = revolt_of_the_earls.5
 			100 = revolt_of_the_earls.6
-			#7 is from sieges
-			200 = revolt_of_the_earls.8
+			100 = revolt_of_the_earls.7
+			100 = revolt_of_the_earls.8
 			100 = revolt_of_the_earls.9
 			#10 11 12 triggered
 			100 = revolt_of_the_earls.13

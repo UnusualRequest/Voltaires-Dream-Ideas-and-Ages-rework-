@@ -132,9 +132,19 @@ country_event = {
 			# 	change_culture = english
 			# }
 		}
-		change_estate_land_share = {
-			estate = estate_nobles
-			share = 1
+		if = {
+			limit = {
+				NOT = {
+					estate_territory = {
+						estate = estate_nobles
+						territory = 50
+					}
+				}
+			}
+			change_estate_land_share = {
+				estate = estate_nobles
+				share = 1
+			}
 		}
 	}
 	option = {
@@ -176,8 +186,12 @@ country_event = {
 				}
 			}
 		}
-		add_years_of_income = -1.5
-		add_adm_power = -200
+		add_years_of_income = -0.5
+		add_adm_power = -100
+		random_owned_province = {
+			limit = { culture = anglosaxon }
+			change_culture = english
+		}
 		random_owned_province = {
 			limit = { culture = anglosaxon }
 			change_culture = english
@@ -342,7 +356,7 @@ country_event = {
 				loyalty = -15
 			}
 		}
-		add_stability = -1
+		#add_stability = -1
 		event_target:engl_prov = {
 			change_culture = english
 		}
@@ -353,18 +367,29 @@ country_event = {
 		ai_chance = { factor = 10 }
 		goto = for_prov
 		event_target:for_prov = {
-			spawn_rebels = {
-				culture = anglosaxon
-   				type = pretender_rebels
-   				leader = "Eadgar"
-   				leader_dynasty = "Cerdicing"
-    			size = 2
+			random = {
+				chance = 30
+				spawn_rebels = {
+					culture = anglosaxon
+					type = pretender_rebels
+					leader = "Eadgar"
+					leader_dynasty = "Cerdicing"
+					size = 1
+				}
 			}
 			remove_province_modifier = foreign_ruler
 		}
-		change_estate_land_share = {
-			estate = estate_nobles
-			share = -1
+		if = {
+			limit = {
+				estate_territory = {
+					estate = estate_nobles
+					territory = 10
+				}
+			}
+			change_estate_land_share = {
+				estate = estate_nobles
+				share = -1
+			}
 		}
 	}
 }
@@ -376,26 +401,11 @@ country_event = {
 	picture = CORRUPTION_eventPicture
 	goto = sieg_prov
 	
-	mean_time_to_happen = {
-		months = 6
-		modifier = {
-			factor = 2
-			estate_loyalty = {
-				estate = estate_nobles
-				loyalty = 60
-			}
-		}
-		modifier = {
-			factor = 2
-			estate_loyalty = {
-				estate = estate_nobles
-				loyalty = 80
-			}
-		}
-	}
+	is_triggered_only = yes
 
 	trigger = {
 		any_owned_province = {
+			is_capital = no
 			culture = anglosaxon
 			sieged_by = REB
 		}
@@ -405,6 +415,7 @@ country_event = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
+					is_capital = no
 					culture = anglosaxon
 					sieged_by = REB
 				}
@@ -416,7 +427,11 @@ country_event = {
 	option = {
 		name = revolt_of_the_earls.7.a
 		event_target:sieg_prov = {
-			change_controller = REB
+			random_list = {
+				45 = { change_siege = 1 }
+				30 = { change_siege = 2 }
+				15 = { change_siege = 3 }
+			}
 		}
 	}
 }
@@ -450,11 +465,21 @@ country_event = {
 	
 	option = {
 		name = revolt_of_the_earls.8.a
-		ai_chance = { factor = 80 }
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0
+				num_of_rebel_armies = 3
+			}
+			modifier = {
+				factor = 0
+				num_of_rebel_controlled_provinces = 10
+			}
+		}
 		goto = reta_prov
 		event_target:reta_prov = {
 			change_culture = english
-			noble_rebels = 2
+			pretender_rebels = 1
 		}
 	}
 	option = {
@@ -464,6 +489,10 @@ country_event = {
 			modifier = {
 				factor = 0.5
 				corruption = 10
+			}
+			modifier = {
+				factor = 0.1
+				corruption = 15
 			}
 		}
 		add_corruption = 1
@@ -515,8 +544,8 @@ country_event = {
 	option = {
 		name = revolt_of_the_earls.10.a
 		add_yearly_manpower = 0.25
-		ENG = { country_event = { id = revolt_of_the_earls.11 } }
-		ENG = {
+		FROM = { country_event = { id = revolt_of_the_earls.11 } }
+		FROM = {
 			random_owned_province = {
 				limit = { culture = welsh }
 				nationalist_rebels = 1
@@ -524,17 +553,17 @@ country_event = {
 		}
 		tooltip = {
 			reverse_add_opinion = {
-				who = ENG
+				who = FROM
 				modifier = supported_rebels
 			}
 		}
 	}
 	option = {
 		name = revolt_of_the_earls.10.b
-		ENG = { country_event = { id = revolt_of_the_earls.12 } }
+		FROM = { country_event = { id = revolt_of_the_earls.12 } }
 		tooltip = {
 			reverse_add_opinion = {
-				who = ENG
+				who = FROM
 				modifier = did_not_support_rebels
 			}
 		}
@@ -683,6 +712,37 @@ country_event = {
 		ai_chance = { factor = 10 }
 		break_union = NRM
 		NRM = { define_ruler = { dynasty = ROOT } }
+		if = {
+			limit = {
+				has_dlc = "Domination"
+				any_country = {
+					has_reform = feudal_france_reform
+				}
+			}
+			random_country = {
+				limit = {
+					has_reform = feudal_france_reform
+				}
+				create_subject = {
+					subject_type = appanage
+					who = NRM
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				FRA = {
+					exists = yes
+					is_subject = no
+				}
+			}
+			FRA = {
+				create_subject = {
+					subject_type = appanage
+					who = NRM
+				}
+			}
+		}
 	}
 }
 
