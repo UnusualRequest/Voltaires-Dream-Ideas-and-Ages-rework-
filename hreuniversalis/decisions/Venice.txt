@@ -16,7 +16,7 @@ confirm_thalassocracy = {
 				1642 = { # Napoli
 					is_strongest_trade_power = ROOT
 				}
-				2703 = { # Messina
+				874 = { # Messina
 					is_strongest_trade_power = ROOT
 				}
 				2235 = { # Roma
@@ -56,7 +56,7 @@ confirm_thalassocracy = {
 					1642 = { #Napoli
 						is_strongest_trade_power = ROOT
 					}
-					2703 = { #Messina
+					874 = { #Ancona
 						is_strongest_trade_power = ROOT
 					}
 					2235 = { #Roma
