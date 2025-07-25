@@ -806,6 +806,16 @@ country_event = {
 					limit = { culture = english }
 					change_culture = anglosaxon
 				}
+				change_tag = ASE
+				on_change_tag_effect = yes
+				change_government = monarchy
+				add_government_reform = germanic_monarchy
+				if = {
+					limit = { 
+						NOT = { has_idea_group = angsax_ideas }
+					}
+					swap_free_idea_group = yes
+				}
 			}
 			remove_accepted_culture = english
 			if = {
