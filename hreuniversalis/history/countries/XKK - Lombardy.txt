@@ -19,7 +19,7 @@ capital = 1012
 		mil = 1
 	}
 	clear_scripted_personalities = yes
-	add_heir_personality = naive_personality
+	add_ruler_personality = naive_personality
 }
 1095.1.1 = {
 	queen = {
