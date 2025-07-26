@@ -24,8 +24,13 @@ change_estate_land_share = {
 
 #Ayyubid Sultans of Egypt
 1171.9.13 = {
+	if = {
+		limit = {
+			has_dlc = "Winds of Change"
+		}
+		add_government_reform = ayyubid_dynasty
+	}
 	add_piety = 0.5
-	add_government_reform = ayyubid_dynasty
 	override_country_name = AYYUBIDS_NAME
 	set_country_flag = ayyubids_name_flag
 	monarch = {
