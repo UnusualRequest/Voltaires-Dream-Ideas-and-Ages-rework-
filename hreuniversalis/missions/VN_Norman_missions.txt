@@ -800,11 +800,11 @@ vn_nrm_missions_slot_2_b = {
 			participate_in_grand_crusade_trigger = yes
 		}
 		effect = {
-			add_army_tradition_or_mil_power = { amount = 15 }
             add_country_modifier = {
 				name = "fra_sanction_crusades_mission"
 				duration = 7300
 			}
+			add_army_professionalism = 0.025
 		}
 	}
 	vn_nrm_rule_a_crusader_state = {
@@ -1268,6 +1268,7 @@ vn_nrm_missions_slot_4_a = {
 					add_permanent_claim = ROOT
 				}
 			}
+			custom_tooltip = " "
 			add_country_modifier = {
 				name = "nrm_safeguard_borders_mission"
 				duration = 9125
