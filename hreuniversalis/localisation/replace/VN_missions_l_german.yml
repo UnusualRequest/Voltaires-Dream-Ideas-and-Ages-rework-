@@ -163,7 +163,7 @@
  vn_convert_provinces_desc: "Wir müssen sicherstellen, dass sich die Menschen in unseren eroberten Gebieten an den einen wahren Glauben halten, damit in Zeiten großer Not die religiösen Spaltungen nicht ausgenutzt werden."
  vn_religious_wars_title: "Religiöse Kriege"
  vn_religious_wars_desc: "Frieden kann unsere religiösen Differenzen mit unseren Feinden nicht lösen. Es ist an der Zeit, dass wir in den Krieg ziehen, in dem wir siegen werden!"
- vn_religious_wars.tt: "Gewinnt §Y5§! Kriege gegen ketzerische oder ungläubige Nationen (§Y[Root.GetNumWarsAgainstNonBelievers]§!/§Y10§!)"
+ vn_religious_wars.tt: "Gewinnt §Y25§! Kriege gegen ketzerische oder ungläubige Nationen (§Y[Root.GetNumWarsAgainstNonBelievers]§!/§Y25§!)"
  won_wars_against_heathen_variable: "[Root.won_wars_against_heathen.GetValue]"
  vn_defend_the_faith_title: "Verteidigt den Glauben"
  vn_defend_the_faith_desc: "In einer Welt, in der Überzeugungen gegeneinander ausgespielt werden, müssen wir unseren Glauben verteidigen und ihn gegen unsere Gegner schützen."

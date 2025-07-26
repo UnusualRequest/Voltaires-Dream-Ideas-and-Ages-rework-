@@ -164,7 +164,7 @@
  vn_convert_provinces_desc: "We must ensure that the people in our conquered territories adhere to the one true faith, so that in times of great need our religious divisions are not exploited."
  vn_religious_wars_title: "Religious Wars"
  vn_religious_wars_desc: "Peace cannot solve our religious differences with our enemies. It is time we go to war, where we shall prevail!"
- vn_religious_wars.tt: "Win §Y10§! wars against Heretic or Heathen countries (§Y[Root.GetNumWarsAgainstNonBelievers]§!/§Y10§!)"
+ vn_religious_wars.tt: "Win §Y25§! wars against Heretic or Heathen countries (§Y[Root.GetNumWarsAgainstNonBelievers]§!/§Y25§!)"
  won_wars_against_heathen_variable: "[Root.won_wars_against_heathen.GetValue]"
  vn_defend_the_faith_title: "Defend the Faith"
  vn_defend_the_faith_desc: "In a world where beliefs are pitted against one another, we must defend our faith and safeguard it against our adversaries."
