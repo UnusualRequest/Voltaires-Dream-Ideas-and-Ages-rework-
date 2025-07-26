@@ -372,7 +372,7 @@ estate_burghers_hungarian_burghers = {
 	benefits = {}
 	mechanics = {}
 	ai_will_do = {
-		factor = 0
+		factor = -300
 	}
 }
 
