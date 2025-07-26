@@ -22,6 +22,15 @@
 #CB
  cb_disloyal_principality: "Disloyal Principality"
  cb_disloyal_principality_desc: "They dishonorably broke their oath of vassalage."
+ cb_force_partial_principality: "Force Partial Principality"
+ cb_force_partial_principality_desc: "They must become part of the Kievan Rus."
+ take_capital_force_partial_principality: "Take the capital"
+ take_capital_force_partial_principality_desc: "War goal is to take the capital."
+ po_establish_partial_principality: "Establish Partial Principality"
+ PEACE_po_establish_partial_principality: "Establish Partial Principality"
+ CB_ALLOWED_po_establish_partial_principality: "Establish Partial Principality"
+ po_establish_partial_principality_desc: "[From.GetName] will become a Partial Principality of [Root.GetName]"
+ FORCE_PARTIAL_PRINCIPALITY_WAR_NAME: "$ORDER$$FIRST$ Reunification War against $SECOND_NAME$"
 #Diplo Actions
  offer_partial_principality_title: "Offer Partial Principality"
  offer_partial_principality_desc: "Do you wish to ask §Y[From.GetName]§! to become your §YPartial Principality§!?\nAs their Overlord you will be able to demand a yearly tribute from them in the form of ¤, £adm£, £dip£, £mil£ or £icon_manpower£.\nThey will still be able to have independent diplomatic relations with other countries."

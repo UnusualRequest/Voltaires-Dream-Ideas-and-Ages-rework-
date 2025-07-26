@@ -1314,6 +1314,7 @@ cb_forced_break_alliance = {
 cb_force_tributary = {
 
 	valid_for_subject = no
+	is_triggered_only = yes
 
 	prerequisites_self = {
 		has_dlc = "Mandate of Heaven"
@@ -1321,18 +1322,8 @@ cb_force_tributary = {
 	}
 
 	prerequisites = {
-		OR = {
-			is_neighbor_of = FROM
-			FROM = { has_country_flag = allow_quick_tributary_cb }
-		}
-		FROM = {
-			is_subject = no
-			is_part_of_hre = no
-			OR = {
-				has_reform = principality
-				has_reform = veche_republic
-			}
-		}
+		FROM = { is_subject = no }
+		is_neighbor_of = FROM
 	}
 
 	war_goal = take_capital_force_tributary

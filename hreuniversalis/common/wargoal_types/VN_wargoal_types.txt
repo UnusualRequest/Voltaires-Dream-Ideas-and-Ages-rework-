@@ -335,3 +335,33 @@ take_capital_conquest_of_england = {
 	
 	war_name = UNION_WAR_NAME
 }
+
+take_capital_force_partial_principality = {
+	type = take_capital
+	
+	attacker = {
+		badboy_factor = 0.5
+		prestige_factor = 2
+		peace_cost_factor = 0.5
+
+		required_treaty_to_take_provinces = {
+			po_establish_partial_principality
+		}
+		
+		peace_options = {
+			po_establish_partial_principality
+		}
+	}
+	
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_demand_provinces
+		}
+	}
+
+	war_name = FORCE_PARTIAL_PRINCIPALITY_WAR_NAME
+}

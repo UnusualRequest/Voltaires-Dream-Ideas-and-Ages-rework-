@@ -326,12 +326,10 @@ country_event = {
 		name = russian_factionalism.3.b
 		ai_chance = { factor = 0 }
 		add_mandate = 10
-		TMT = { set_country_flag = allow_quick_tributary_cb }
 		declare_war_with_cb = {
-			casus_belli = cb_force_tributary
+			casus_belli = cb_force_partial_principality
 			who = TMT
 		}
-		TMT = { clr_country_flag = allow_quick_tributary_cb }
 	}
 }
 
@@ -466,12 +464,10 @@ country_event = {
 	option = {
 		name = russian_factionalism.4.b
 		add_mandate = 10
-		VHN = { set_country_flag = allow_quick_tributary_cb }
 		declare_war_with_cb = {
-			casus_belli = cb_force_tributary
+			casus_belli = cb_force_partial_principality
 			who = VHN
 		}
-		VHN = { clr_country_flag = allow_quick_tributary_cb }
 	}
 }
 
@@ -744,12 +740,10 @@ country_event = {
 				}
 			}
 			CHR = { grant_independence = yes }
-			CHR = { set_country_flag = allow_quick_tributary_cb }
 			declare_war_with_cb = {
-				casus_belli = cb_force_tributary
+				casus_belli = cb_force_partial_principality
 				who = CHR
 			}
-			CHR = { clr_country_flag = allow_quick_tributary_cb }
 		}
 		if = {
 			limit = {
@@ -761,12 +755,10 @@ country_event = {
 				}
 			}
 			PLL = { grant_independence = yes }
-			PLL = { set_country_flag = allow_quick_tributary_cb }
 			declare_war_with_cb = {
-				casus_belli = cb_force_tributary
+				casus_belli = cb_force_partial_principality
 				who = PLL
 			}
-			PLL = { clr_country_flag = allow_quick_tributary_cb }
 		}
 	}
 }
@@ -835,7 +827,7 @@ country_event = {
 		name = russian_factionalism.7.b
 		add_mandate = 10
 		declare_war_with_cb = {
-			casus_belli = cb_force_tributary
+			casus_belli = cb_force_partial_principality
 			who = NOV
 		}
 	}

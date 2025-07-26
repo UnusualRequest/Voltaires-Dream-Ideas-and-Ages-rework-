@@ -189,3 +189,27 @@ cb_disloyal_principality = {
 
 	war_goal = take_capital_disloyal
 }
+
+#Establish new Partial Parincipality
+cb_force_partial_principality = {
+	valid_for_subject = no
+
+	prerequisites_self = {
+		is_emperor_of_china = yes
+	}
+
+	prerequisites = {
+		FROM = {
+			is_subject = no
+			capital_scope = {
+				OR = {
+					superregion = russia_superregion
+					superregion = ruthenia_superregion
+				}
+			}
+		}
+		
+	}
+	
+	war_goal = take_capital_force_partial_principality
+}

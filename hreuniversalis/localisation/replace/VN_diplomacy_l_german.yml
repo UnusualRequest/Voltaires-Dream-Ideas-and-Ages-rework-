@@ -22,6 +22,15 @@
 #CB
  cb_disloyal_principality: "Illoyales Partialfürstentum"
  cb_disloyal_principality_desc: "Sie haben ihren Lehnseid ehrlos gebrochen."
+ cb_force_partial_principality: "Partialfürstentum erzwingen"
+ cb_force_partial_principality_desc: "Sie müssen ein Teil der Kiewer Rus werden."
+ take_capital_force_partial_principality: "Eroberung der Hauptstadt"
+ take_capital_force_partial_principality_desc: "Kriegsziel ist die Eroberung der Hauptstadt."
+ po_establish_partial_principality: "Partialfürstentum gründen"
+ PEACE_po_establish_partial_principality: "Partialfürstentum gründen"
+ CB_ALLOWED_po_establish_partial_principality: "Partialfürstentum gründen"
+ po_establish_partial_principality_desc: "[From.GetName] wird zu einem Partialfürstentum von [Root.GetName]"
+ FORCE_PARTIAL_PRINCIPALITY_WAR_NAME: "$ORDER$$FIRST$ Wiedervereinigungskrieg gegen $SECOND_NAME$"
 #Diplo Actions
  offer_partial_principality_title: "Partialfürstentumstatus anbieten"
  offer_partial_principality_desc: "Möchtet Ihr §Y[From.GetName]§! bitten, Euer §YPartialfürstentum§! zu werden?\nAls Lehnsherr fordern wir von ihnen einen jährlichen Tribut in Form von ¤, £adm£, £dip£, £mil£ oder £icon_manpower£.\nSie werden weiterhin unabhängige diplomatische Beziehungen mit anderen Nationen durchführen können."
