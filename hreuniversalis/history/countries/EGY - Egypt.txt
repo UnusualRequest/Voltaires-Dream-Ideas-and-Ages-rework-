@@ -8,6 +8,10 @@ capital = 5054
 religious_school = hanafi_school
 
 1803.5.1 = {
+	if = {
+		limit = { has_dlc = "King of Kings" }
+		add_government_reform = egyptian_government_reform
+	}
 	monarch = {
 		name = "Muhammad ‘Alî"
 		dynasty = "Mehmetoglu"
