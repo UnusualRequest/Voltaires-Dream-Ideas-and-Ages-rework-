@@ -129,7 +129,13 @@ country_decisions = {
 	BYZ_build_theodosian_wall_decision = {
 		major = yes
 		potential = {
-			has_country_flag = BYZ_unlock_decision_to_upgrade_theodosian_wall_flag
+			has_dlc = "King of Kings"
+			OR = {
+				tag = BYZ
+				was_tag = BYZ
+				tag = NKA
+			}
+			#has_country_flag = BYZ_unlock_decision_to_upgrade_theodosian_wall_flag
 			2233 = {
 				NOT = { has_province_modifier = BYZ_theodosian_wall_3 }
 			}
@@ -156,9 +162,9 @@ country_decisions = {
 				}
 				if = {
 					limit = { has_country_flag = BYZ_upgrading_theodosian_walls_will_be_25_cheaper }
-					treasury = 75
+					treasury = 150
 				}
-				else = { treasury = 100 }
+				else = { treasury = 200 }
 			}
 			else_if = {
 				limit = {
@@ -166,9 +172,9 @@ country_decisions = {
 				}
 				if = {
 					limit = { has_country_flag = BYZ_upgrading_theodosian_walls_will_be_25_cheaper }
-					treasury = 150
+					treasury = 375
 				}
-				else = { treasury = 200 }
+				else = { treasury = 500 }
 			}
 			else_if = {
 				limit = {
@@ -176,9 +182,9 @@ country_decisions = {
 				}
 				if = {
 					limit = { has_country_flag = BYZ_upgrading_theodosian_walls_will_be_25_cheaper }
-					treasury = 375
+					treasury = 750
 				}
-				else = { treasury = 500 }
+				else = { treasury = 1000 }
 			}
 		}
 		effect = {

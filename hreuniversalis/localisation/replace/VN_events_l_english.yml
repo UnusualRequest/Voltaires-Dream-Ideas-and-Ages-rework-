@@ -1,5 +1,7 @@
 ﻿l_english:
 #Vanilla
+ MEE_Byzantine_Events.14.d: "The upgrade to mighty Theodosian Walls that protect our beloved city is finally complete. There is no force that may pierce these walls, no trebuchet, no assault weapon. Only a powerful cannon could deal damage to those, but those are rare and expensive, something our enemies surely aren't capable of mustering."
+ MEE_Byzantine_Events.14.a: "Let them come!"
  EVTDESC5083: "During the period 1050-1600, Italian siege engineers were highly sought after to teach the ways of the trace Italienne to the militaries of Europe. In most cases, these engineers had no national identity and simply worked for whoever could afford to pay them."
  EVTNAME6163: "Heresy concerns clerics"
  EVTDESC6163: "Our Policy of tolerance to all faiths has led to some of our population deciding to embrace heretical beliefs."
