@@ -2745,7 +2745,7 @@ country_event = {
 		}
 		hidden_effect = {
 			set_country_flag = had_mary_event
-			set_ruler = bloody_mary
+			set_ruler_flag = bloody_mary
 		}
 		ai_chance = {
 			factor = 1
@@ -2934,7 +2934,7 @@ country_event = {
 						religion = anglican
 						religion = hussite
 						religion = reformed
-						religion = protestantn
+						religion = protestant
 						religion = anabaptist
 					}
 				}
