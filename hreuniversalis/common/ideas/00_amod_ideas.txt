@@ -14799,7 +14799,7 @@ MAMA_ideas = {
 	
 	trigger = {
 		tag = MAM
-		dynasty = "Eyï¿½bï¿½"
+		dynasty = "Eyûbî"
 	}
 	free = yes
 
