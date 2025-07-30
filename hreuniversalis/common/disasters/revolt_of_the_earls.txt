@@ -109,8 +109,8 @@ revolt_of_the_earls = {
 	modifier = {
 		num_accepted_cultures = -2
 		culture_conversion_cost = 10
-		global_unrest = 10
-		can_not_declare_war = yes
+		global_unrest = 3
+		stability_cost_to_declare_war = 1
 	}
 	
 	on_start = revolt_of_the_earls.1
