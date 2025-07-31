@@ -12,11 +12,11 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		tag = BYZ
 		is_year = 1083
 		NOT = {
 			is_year = 1154
 		}
-		tag = BYZ
 		is_female = no
 		has_regency = no
 		has_heir = no
@@ -170,11 +170,11 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		owns = 2468
 		is_year = 1098
 		NOT = {
 			is_year = 1179
 		}
-		owns = 2468
 		NOT = { advisor_exists = 2140 }
 		NOT = { is_advisor_employed = 2140 }
 	}
@@ -242,11 +242,11 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		owns = 117
 		is_year = 1347
 		NOT = {
 			is_year = 1380
 		}
-		owns = 117
 		NOT = { advisor_exists = 2017 }
 		NOT = { is_advisor_employed = 2017 }
 	}
@@ -700,8 +700,8 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		religion = sunni
 		owns = 6301
+		religion = sunni
 		OR = {
 			employed_advisor = { name = "Al-Ghazali" }
 			has_country_flag = made_ghazali_professor
@@ -745,9 +745,9 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		owns = 6301
 		is_year = 1110
 		religion = sunni
-		owns = 6301
 		NOT = {	employed_advisor = { name = "Al-Ghazali" } }
 		has_country_flag = ghazali_arrived
 	}
@@ -860,12 +860,12 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		is_year = 1280
-		NOT = { is_year = 1380 }
-		religion = sunni
 		capital_scope = {
 			superregion = anatolia_superregion
 		}
+		is_year = 1280
+		NOT = { is_year = 1380 }
+		religion = sunni
 		has_global_flag = rumi_mathnawi
 	}
 
@@ -892,10 +892,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		owns = 2670
 		is_year = 1150
 		NOT = { is_year = 1200 }
 		religion = sunni
-		owns = 2670
 	}
 
 	mean_time_to_happen = {
