@@ -35,7 +35,10 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			is_nomad = no
-			adm_tech = 56
+			if = {
+				limit = { NOT = { has_country_flag = can_form_yugoslavia_earlier } }
+				adm_tech = 56
+			}
 			NOT = { exists = BYZ }
 			owns_core_province = 539 #Belgrade
 			owns_core_province = 2066 #Skopje
@@ -618,9 +621,7 @@ country_decisions = {
 				}
 			}
 			if = {
-				limit = {
-					is_playing_custom_nation = no
-				}
+				limit = { has_custom_ideas = no NOT = { has_idea_group = FKN_ideas } }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 		}
@@ -786,6 +787,7 @@ country_decisions = {
 		allow = {
 			OR = {
 				adm_tech = 40
+				tag = APL
 				has_reform = siculo_norman_monarchy
 			}
 			is_free_or_tributary_trigger = yes
@@ -5172,6 +5174,10 @@ country_decisions = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = SAX
+			}
+			if = {
+				limit = { has_custom_ideas = no NOT = { has_idea_group = SAX_ideas } }
+				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			add_prestige = 10
 			if = {
