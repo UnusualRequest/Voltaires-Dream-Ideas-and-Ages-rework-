@@ -100,6 +100,12 @@ if = {
 	add_heir_personality = tactical_genius_personality
 	add_heir_personality = lawgiver_personality
 }
+1080.6.24 = {
+	add_country_modifier = {
+		name = seljuk_yoke_mod
+		duration = -1
+	}
+}
 1089.1.1 = {
 	monarch = {
 		name = "Davit IV"
@@ -127,7 +133,9 @@ if = {
 		mil = 2
 	}
 }
-1122.1.1 = { capital = 3621 }
+1099.7.15 = {
+	remove_country_modifier = seljuk_yoke_mod
+}
 1122.1.1 = { capital = 3621 set_country_flag = moved_capital_to_tiflis }
 1125.1.24 = {
 	monarch = {
@@ -210,6 +218,17 @@ if = {
 		adm = 3
 		dip = 3
 		mil = 3
+	}
+}
+1202.1.1 = {
+	leader = {
+		name = "Shalva Akhaltsikheli"
+		type = general
+		fire = 4
+		shock = 3
+		manuever = 3
+		siege = 0
+		death_date = 1226.1.1
 	}
 }
 1213.1.18 = {

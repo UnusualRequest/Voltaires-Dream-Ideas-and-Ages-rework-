@@ -1013,6 +1013,12 @@ sjk_mesopotamian_annexation = {
 	province_warscore_cost = -0.1
 	core_creation = -0.1
 }
+seljuk_yoke_mod = {
+	prestige = -0.5
+	legitimacy = -0.5
+	global_unrest = 2
+	picture = "monthly_ottoman_decadence"
+}
 
 #Imperial Incidents
 investiture_excommunication_m = {

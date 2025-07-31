@@ -17,6 +17,21 @@ country_event = {
 		add_legitimacy = -50
 		add_stability = -5
 	}
+
+	after = {
+		if = {
+			limit = {
+				GEO = {
+					has_country_modifier = seljuk_yoke_mod
+				}
+			}
+			GEO = {
+				country_event = {
+					id = vn_flavor_geo.6
+				}
+			}
+		}
+	}
 }
 
 #End

@@ -37,6 +37,9 @@
 #Misc
  negropontian_triarchy_seat: "Sitz der Triarchie"
  desc_negropontian_triarchy_seat: "Der derzeitige Triarch stammt aus dieser Provinz, was ihre Bedeutung während ihrer Regierungszeit stärkt.
+ seljuk_yoke_mod: "Seldschukisches Joch"
+ desc_seljuk_yoke_mod: "Die Seldschuken bedrohen unser Land und haben uns zu jährlichen Tributzahlungen auferzwungen."
+ seljuk_yoke_mod.tt: "bis wir §Y[SJK.GetUsableName]§! in einem Krieg besiegen oder §Y[SJK.GetUsableName]§! seine Hegemonialstellung verliert"
  sjk_mesopotamian_annexation: "Mesopotamischer Feldzug"
  desc_tur_egyptian_annexation: "Unsere Entscheidung, nicht das gesamte Sultanat der Buyiden in einem einzigen Krieg zu annektieren, erlaubt es unserer Verwaltung, sich auf die bevorstehende große Eroberung vorzubereiten. Mesopotamien wird fallen; es wird nur etwas länger dauern."
  confiscated_imperial_regalia: "Reichsinsignien beschlagnahmt"

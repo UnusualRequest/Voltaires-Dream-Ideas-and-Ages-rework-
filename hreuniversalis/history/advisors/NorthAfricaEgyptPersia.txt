@@ -52,6 +52,17 @@ advisor = {
 }
 
 advisor = {
+	advisor_id = 2225
+	name = "Shota Rustaveli"
+	location = 3621
+	discount = yes
+	skill = 3
+	type = artist
+	date = 1191.1.1
+	death_date = 1216.1.1
+}
+
+advisor = {
 	advisor_id = 2046
 	name = "Leonardo Fibonacci"
 	location = 423
