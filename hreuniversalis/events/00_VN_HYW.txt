@@ -132,7 +132,6 @@ country_event = {
 			limit = { has_dlc = "Mandate of Heaven" }
 			add_splendor = 800
 		}
-		clear_hyw_flags_and_event_targets_effect = yes
 	}
 
 	option = {
@@ -143,6 +142,7 @@ country_event = {
 			who = FROM
 			modifier = eng_no_english_in_france
 		}
+		clear_hyw_flags_and_event_targets_effect = yes
 	}
 }
 
