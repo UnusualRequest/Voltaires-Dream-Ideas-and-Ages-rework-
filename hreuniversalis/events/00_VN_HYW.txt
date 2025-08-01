@@ -116,10 +116,12 @@ country_event = {
 			}
 		}
 		add_yearly_manpower = 0.5
-		add_casus_belli = {
-			type = cb_hundred_years_union
-			months = 1200
-			target = FROM
+		tooltip = {
+			add_casus_belli = {
+				type = cb_hundred_years_union
+				months = 1200
+				target = FROM
+			}
 		}
 		if = {
 			limit = {

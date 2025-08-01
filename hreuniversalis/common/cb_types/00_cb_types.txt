@@ -1348,7 +1348,7 @@ cb_hundred_years_union = {
 	}
 
 	prerequisites = {
-		has_country_flag = hyw_fra_flag
+		FROM = { has_country_flag = hyw_fra_flag }
 	}
 
 	war_goal = take_capital_personal_union
