@@ -3824,7 +3824,7 @@ andean_empire_reform = {
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 60
-	fixed_rank = 3
+	fixed_rank = 6
 	modifiers = {
 		global_unrest = -2
 		max_absolutism_effect = 0.1
