@@ -1,82 +1,82 @@
 # Basic Ideas
 
-logistics_ideas = {
-	category = MIL
+#logistics_ideas = {
+#	category = MIL
+#
+#	bonus = {
+#		backrow_artillery_damage = 0.1
+#	}
+#
+#	log_i1 = {
+#		extra_manpower_at_religious_war = yes
+#		loot_amount = 0.25
+#	}
+#	log_i2 = {
+#		cavalry_flanking = 0.5
+#	}
+#	log_i3 = {
+#		recover_army_morale_speed = 0.10
+#		movement_speed = 0.15
+#	}
+#	log_i4 = {
+#		fort_maintenance_modifier = -0.1
+#	}
+#	log_i5 = {
+#		drill_decay_modifier = -0.25
+#		drill_gain_modifier = 0.2
+#	}
+#	log_i6 = {
+#		leader_naval_manuever = 1
+#		leader_land_manuever = 1
+#	}
+#	log_i7 = {
+#		attack_bonus_in_capital_terrain = 1
+#	}
+#
+#	ai_will_do = {
+#		factor = 0.49
+#	}
+#}
 
-	bonus = {
-		backrow_artillery_damage = 0.1
-	}
-
-	log_i1 = {
-		extra_manpower_at_religious_war = yes
-		loot_amount = 0.25
-	}
-	log_i2 = {
-		cavalry_flanking = 0.5
-	}
-	log_i3 = {
-		recover_army_morale_speed = 0.10
-		movement_speed = 0.15
-	}
-	log_i4 = {
-		fort_maintenance_modifier = -0.1
-	}
-	log_i5 = {
-		drill_decay_modifier = -0.25
-		drill_gain_modifier = 0.2
-	}
-	log_i6 = {
-		leader_naval_manuever = 1
-		leader_land_manuever = 1
-	}
-	log_i7 = {
-		attack_bonus_in_capital_terrain = 1
-	}
-
-	ai_will_do = {
-		factor = 0.49
-	}
-}
-
-cultural_ideas = {
-	category = DIP
-
-	bonus = {
-		same_culture_advisor_cost = -0.25
-		monthly_cultural_unity = 0.5
-	}
-
-	cul_i1 = {
-		manpower_in_accepted_culture_provinces = 0.15
-	}
-	cul_i2 = {
-		relation_with_accepted_culture = 10
-	}
-	cul_i3 = {
-		national_focus_years = -5
-	}
-	cul_i4 = {
-		num_accepted_cultures = 2
-	}
-	cul_i5 = {
-		transport_cost = -0.1
-		transport_power = 0.1
-	}
-	cul_i6 = {
-		republican_tradition = 0.3
-		legitimacy = 1
-		devotion = 0.5
-		horde_unity = 1
-		meritocracy = 0.5
-	}
-	cul_i7 = {
-		tolerance_own = 2
-	}
-
-	ai_will_do = {
-		factor = 0.49
-	}
-}
+#cultural_ideas = {
+#	category = DIP
+#
+#	bonus = {
+#		same_culture_advisor_cost = -0.25
+#		monthly_cultural_unity = 0.5
+#	}
+#
+#	cul_i1 = {
+#		manpower_in_accepted_culture_provinces = 0.15
+#	}
+#	cul_i2 = {
+#		relation_with_accepted_culture = 10
+#	}
+#	cul_i3 = {
+#		national_focus_years = -5
+#	}
+#	cul_i4 = {
+#		num_accepted_cultures = 2
+#	}
+#	cul_i5 = {
+#		transport_cost = -0.1
+#		transport_power = 0.1
+#	}
+#	cul_i6 = {
+#		republican_tradition = 0.3
+#		legitimacy = 1
+#		devotion = 0.5
+#		horde_unity = 1
+#		meritocracy = 0.5
+#	}
+#	cul_i7 = {
+#		tolerance_own = 2
+#	}
+#
+#	ai_will_do = {
+#		factor = 0.49
+#	}
+#}
 #this one is about manufacturing goods in the state and relations with burgers. Flavor-wise is is something like Proto-mercantilism and state relations with guilds/burgers. Mechanicaly it is somethings between plutocracy and court. Adding -1 unrest and war exh cost reduction for non-money modefier too. Remove build time (its for infrastracture), global trade power (this is for trade), inflation (this one for economy), centralize state (why it is even here?), and maitanance (again this one for economy)
 manufacturing_ideas = {
 	category = ADM
@@ -658,61 +658,61 @@ diplomatic_ideas = {
 	}
 }
 
-piracy_ideas = {
-	category = DIP
-
-	bonus = {
-		may_perform_slave_raid = yes
-	}
-
-	trigger = {
-		normal_or_historical_nations = yes
-	}
-
-	pir_i1 = {
-		navy_tradition_decay = -0.01
-		warscore_from_battles_modifier = 0.25
-	}
-	pir_i2 = {
-		embargo_efficiency = 0.20
-		blockade_efficiency = 0.20
-	}
-	pir_i3 = {
-		capture_ship_chance = 0.15
-		naval_tradition_from_battle = 1
-	}
-	pir_i4 = {
-		naval_forcelimit_modifier = 0.25
-	}
-	pir_i5 = {
-		light_ship_power = 0.15
-		hull_size_modifier = 0.1
-	}
-	pir_i6 = {
-		own_coast_naval_combat_bonus = 1
-	}
-	pir_i7 = {
-		privateer_efficiency = 0.33
-		privateering_efficiency_in_fleet_modifier = 1
-	}
-
-	ai_will_do = {
-		factor = 0.49
-		modifier = {
-			factor = 0
-			NOT = { num_of_ports = 1 }
-		}
-		modifier = {
-			factor = 10
-			OR = {
-				has_reform = pirate_republic_reform
-				has_reform = pirate_kingdom
-				has_reform = war_against_the_world_government
-				has_reform = black_market_consortium_government
-			}
-		}
-	}
-}
+#piracy_ideas = {
+#	category = DIP
+#
+#	bonus = {
+#		may_perform_slave_raid = yes
+#	}
+#
+#	trigger = {
+#		normal_or_historical_nations = yes
+#	}
+#
+#	pir_i1 = {
+#		navy_tradition_decay = -0.01
+#		warscore_from_battles_modifier = 0.25
+#	}
+#	pir_i2 = {
+#		embargo_efficiency = 0.20
+#		blockade_efficiency = 0.20
+#	}
+#	pir_i3 = {
+#		capture_ship_chance = 0.15
+#		naval_tradition_from_battle = 1
+#	}
+#	pir_i4 = {
+#		naval_forcelimit_modifier = 0.25
+#	}
+#	pir_i5 = {
+#		light_ship_power = 0.15
+#		hull_size_modifier = 0.1
+#	}
+#	pir_i6 = {
+#		own_coast_naval_combat_bonus = 1
+#	}
+#	pir_i7 = {
+#		privateer_efficiency = 0.33
+#		privateering_efficiency_in_fleet_modifier = 1
+#	}
+#
+#	ai_will_do = {
+#		factor = 0.49
+#		modifier = {
+#			factor = 0
+#			NOT = { num_of_ports = 1 }
+#		}
+#		modifier = {
+#			factor = 10
+#			OR = {
+#				has_reform = pirate_republic_reform
+#				has_reform = pirate_kingdom
+#				has_reform = war_against_the_world_government
+#				has_reform = black_market_consortium_government
+#			}
+#		}
+#	}
+#}
 
 offensive_ideas = {
 	category = MIL
@@ -1053,107 +1053,107 @@ economic_ideas = {
 }
 
 
-exploration_ideas = {
-	category = DIP
-	important = yes
-
-	bonus = {
-		colonists = 1
-	}
-
-	trigger = {
-		normal_or_historical_nations = no
-	}
-
-	quest_for_the_new_world	= {
-		global_colonial_growth = 10
-		naval_attrition = -0.1
-	}
-	colonial_ventures = {
-		colonists = 1
-		effect = { remove_temporary_colonist = yes }
-	}
-	overseas_exploration = {
-		range = 0.5
-	}
-	land_of_opportunity = {
-		global_colonial_growth = 10
-	}
-	factories = {
-		trade_company_governing_cost = -0.1
-		trade_company_investment_cost = -0.1
-	}
-	free_colonies = {
-		colonist_placement_chance = 0.1
-	}
-	global_empire = {
-		naval_forcelimit_modifier = 0.25
-		treasure_fleet_income = 0.25
-	}
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			is_colonial_nation = yes
-		}
-		modifier = {
-			factor = 0
-			is_tribal = yes
-		}
-		modifier = {
-			factor = 0
-			is_subject_other_than_tributary_trigger = yes
-		}
-		modifier = {
-			factor = 0
-			current_age = age_of_revolutions
-		}
-		modifier = {
-			factor = 0
-			NOT = { num_of_ports = 1 }
-			NOT = { 
-				any_owned_province = { 
-					is_in_capital_area = yes
-					has_empty_adjacent_province = yes
-				} 
-			}
-		}
-		modifier = {
-			factor = 0.1
-			NOT = { 
-				any_owned_province = { 
-					is_in_capital_area = yes
-					has_empty_adjacent_province = yes
-				} 
-			}			
-		}
-		modifier = {
-			factor = 2.0
-			num_of_ports = 5
-		}
-		modifier = {
-			factor = 2.0
-			num_of_ports = 10
-		}
-		modifier = {
-			factor = 2.0
-			num_of_ports = 15
-		}
-		modifier = {
-			factor = 2.0
-			num_of_ports = 20
-		}
-		modifier = {
-			factor = 1.5
-			OR = {
-				culture_group = iberian
-				culture_group = east_slavic
-				culture_group = ugric
-			}
-		}
-	}
-}
+#exploration_ideas = {
+#	category = DIP
+#	important = yes
+#
+#	bonus = {
+#		colonists = 1
+#	}
+#
+#	trigger = {
+#		normal_or_historical_nations = no
+#	}
+#
+#	quest_for_the_new_world	= {
+#		global_colonial_growth = 10
+#		naval_attrition = -0.1
+#	}
+#	colonial_ventures = {
+#		colonists = 1
+#		effect = { remove_temporary_colonist = yes }
+#	}
+#	overseas_exploration = {
+#		range = 0.5
+#	}
+#	land_of_opportunity = {
+#		global_colonial_growth = 10
+#	}
+#	factories = {
+#		trade_company_governing_cost = -0.1
+#		trade_company_investment_cost = -0.1
+#	}
+#	free_colonies = {
+#		colonist_placement_chance = 0.1
+#	}
+#	global_empire = {
+#		naval_forcelimit_modifier = 0.25
+#		treasure_fleet_income = 0.25
+#	}
+#
+#	ai_will_do = {
+#		factor = 1
+#		modifier = {
+#			factor = 0
+#			is_colonial_nation = yes
+#		}
+#		modifier = {
+#			factor = 0
+#			is_tribal = yes
+#		}
+#		modifier = {
+#			factor = 0
+#			is_subject_other_than_tributary_trigger = yes
+#		}
+#		modifier = {
+#			factor = 0
+#			current_age = age_of_revolutions
+#		}
+#		modifier = {
+#			factor = 0
+#			NOT = { num_of_ports = 1 }
+#			NOT = { 
+#				any_owned_province = { 
+#					is_in_capital_area = yes
+#					has_empty_adjacent_province = yes
+#				} 
+#			}
+#		}
+#		modifier = {
+#			factor = 0.1
+#			NOT = { 
+#				any_owned_province = { 
+#					is_in_capital_area = yes
+#					has_empty_adjacent_province = yes
+#				} 
+#			}			
+#		}
+#		modifier = {
+#			factor = 2.0
+#			num_of_ports = 5
+#		}
+#		modifier = {
+#			factor = 2.0
+#			num_of_ports = 10
+#		}
+#		modifier = {
+#			factor = 2.0
+#			num_of_ports = 15
+#		}
+#		modifier = {
+#			factor = 2.0
+#			num_of_ports = 20
+#		}
+#		modifier = {
+#			factor = 1.5
+#			OR = {
+#				culture_group = iberian
+#				culture_group = east_slavic
+#				culture_group = ugric
+#			}
+#		}
+#	}
+#}
 
 
 maritime_ideas = {
@@ -1434,87 +1434,87 @@ quantity_ideas = {
 	}
 }
 
-expansion_ideas = {
-	category = ADM
-	important = yes
-
-	bonus = {
- 		min_autonomy_in_territories = -0.1
-	}
-
-	additional_colonists = {
-		colonists = 1
-		effect = { remove_temporary_colonist = yes }
-	}
-	additional_merchants = {
-		merchants = 1
-	}
-	faster_colonists = {
-		global_colonial_growth = 20
-	}
-	vice_roys  = {
-		global_tariffs = 0.10
- 		envoy_travel_time = -0.20
- 	}
-	additional_diplomats = {
-		diplomats = 1
-		reduced_liberty_desire_on_other_continent = 5
-	}
-	general_colonization_law  = {
-		colonists = 1
-		colonist_placement_chance = 0.05
-		effect = { remove_temporary_colonist = yes }
-	}
-	competetive_merchants  = {
-		global_trade_power = 0.2
-	}
-
-	ai_will_do = {
-		factor = 0.5
-		modifier = {
-			factor = 10
-			OR = {
-				has_idea_group = exploration_ideas
-				is_colonial_nation = yes
-			}
-		}
-		modifier = {
-			factor = 5
-			OR = {
-				tag = CAS
-				tag = POR
-				tag = SPA
-			}
-		}
-		modifier = {
-			factor = 10
-			NOT = { has_dlc = "Third Rome" } # Has siberian frontier instead
-			tag = RUS
-			num_of_cities = 20
-			any_owned_province = {
-				has_empty_adjacent_province = yes
-			}
-		}
-		modifier = {
-			factor = 0
-			NOT = { has_idea_group = exploration_ideas }
-			NOT = { is_colonial_nation = yes }
-			NOT = {
-				any_owned_province = {
-					has_empty_adjacent_province = yes
-				}
-			}
-		}
-		modifier = {
-			factor = 0.1
-			NOT = {
-				technology_group = western
-				technology_group = eastern
-				technology_group = muslim
-			}
-		}
-	}
-}
+#expansion_ideas = {
+#	category = ADM
+#	important = yes
+#
+#	bonus = {
+#		min_autonomy_in_territories = -0.1
+#	}
+#
+#	additional_colonists = {
+#		colonists = 1
+#		effect = { remove_temporary_colonist = yes }
+#	}
+#	additional_merchants = {
+#		merchants = 1
+#	}
+#	faster_colonists = {
+#		global_colonial_growth = 20
+#	}
+#	vice_roys  = {
+#		global_tariffs = 0.10
+#		envoy_travel_time = -0.20
+# 	}
+#	additional_diplomats = {
+#		diplomats = 1
+#		reduced_liberty_desire_on_other_continent = 5
+#	}
+#	general_colonization_law  = {
+#		colonists = 1
+#		colonist_placement_chance = 0.05
+#		effect = { remove_temporary_colonist = yes }
+#	}
+#	competetive_merchants  = {
+#		global_trade_power = 0.2
+#	}
+#
+#	ai_will_do = {
+#		factor = 0.5
+#		modifier = {
+#			factor = 10
+#			OR = {
+#				has_idea_group = exploration_ideas
+#				is_colonial_nation = yes
+#			}
+#		}
+#		modifier = {
+#			factor = 5
+#			OR = {
+#				tag = CAS
+#				tag = POR
+#				tag = SPA
+#			}
+#		}
+#		modifier = {
+#			factor = 10
+#			NOT = { has_dlc = "Third Rome" } # Has siberian frontier instead
+#			tag = RUS
+#			num_of_cities = 20
+#			any_owned_province = {
+#				has_empty_adjacent_province = yes
+#			}
+#		}
+#		modifier = {
+#			factor = 0
+#			NOT = { has_idea_group = exploration_ideas }
+#			NOT = { is_colonial_nation = yes }
+#			NOT = {
+#				any_owned_province = {
+#					has_empty_adjacent_province = yes
+#				}
+#			}
+#		}
+#		modifier = {
+#			factor = 0.1
+#			NOT = {
+#				technology_group = western
+#				technology_group = eastern
+#				technology_group = muslim
+#			}
+#		}
+#	}
+#}
 
 administrative_ideas = {
 	category = ADM
