@@ -7,3 +7,6 @@ In order to enable and work with this version of VN2 from the launcher:
 3. Enable the playset on the first page of the launcher.
 4. ??
 5. Profit!
+
+**#I&A_rework for VN2**
+WIP
