@@ -1878,13 +1878,13 @@ mercenary_ideas = {
 		factor = 0
 	}
 }
-
+#same as other "tall" admin ideas should recive some buffs. General idea the same is in vanilla. This should be ultimate tall thing. -15 dev cost kinda insane, but again competition in ideas are strong. i also like even more cheaper state gov cost, especially becouse courthouse are so much late.
 infrastructure_ideas = {
 	category = ADM
 	
 
 	bonus = {
-		development_cost = -0.1
+		development_cost = -0.15
 	}
 
 	state_efficiency = {
@@ -1895,14 +1895,14 @@ infrastructure_ideas = {
 		build_cost = -0.1 
 	}
 	efficient_construction_plans = {
-		expand_infrastructure_cost_modifier = -0.25
+		expand_infrastructure_cost_modifier = -0.75
 	}
 	expanded_infrastructure_network = {
 		movement_speed = 0.1
 		center_of_trade_upgrade_cost = -0.2
 	}
 	administrative_efficiency_idea = {
-		state_governing_cost = -0.1
+		state_governing_cost = -0.5
 	}
 	fort_logistics = {
 		fort_maintenance_modifier = -0.25
