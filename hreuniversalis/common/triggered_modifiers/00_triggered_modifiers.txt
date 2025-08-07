@@ -2,6 +2,24 @@
 # these are checked for each countries once/month and then applied.
 #
 # Effects are fully scriptable here.
+######################################
+# Global innovativness decay.
+######################################
+global_inno_decay = {
+	potential = {
+		OR = {
+			current_age = age_of_empire
+			current_age = age_of_holy_wars
+			current_age = age_of_crisis
+			current_age = age_of_dynasticism
+		}
+	}
+		trigger = {
+	NOT = { full_idea_group = innovativeness_ideas }
+	}
+	innovativeness_gain = -1
+}
+
 
 ######################################
 # Catholic control of Rome.
