@@ -1157,7 +1157,7 @@ economic_ideas = {
 #	}
 #}
 
-
+# worst idea possible. Or at least many say so. Lets buff it. VN2 better for naval game play in general becouse how map is. Since piracy and explo ideas are gone, some buffs from them moved here. So, in general, this idea for large play on coastline.
 maritime_ideas = {
 	category = DIP
 
@@ -1166,28 +1166,42 @@ maritime_ideas = {
 	}
 
 	bonus = {
-		sea_repair = yes
-		movement_speed_in_fleet_modifier = 1 
+		cb_on_primitives = yes
+		cb_on_overseas = yes 
 	}
 	
 	merchant_traditions = {
 		naval_tradition_from_trade = 1.0
-		trade_range_modifier = 0.25
+		trade_range_modifier = 0.5
 	}
 	merchant_marine = {
-		global_sailors_modifier = 0.5
-		allowed_marine_fraction = 0.25
+		global_sailors_modifier = 0.75
+		allowed_marine_fraction = 1
+		effect = {
+			add_country_modifier = { 
+				name = maritime_sailors_shock_recived_buff
+				duration = -1
+			}
+		}
+		removed_effect = {
+			remove_country_modifier = maritime_sailors_shock_recived_buff
+			}			
+			
+		}
 	}
 	sheltered_ports = {
 		global_ship_repair = 0.1
-		sailor_maintenance_modifer = -0.1
+		sailor_maintenance_modifer = -0.2
+		
 	}
 	grand_navy = {
-		naval_forcelimit_modifier = 0.5
+		naval_forcelimit_modifier = 1
 		ship_power_propagation = 0.25
+		max_flagships = 3
 	}
 	ships_penny = {
 		global_ship_cost = -0.1
+		naval_maintenance_flagship_modifier = -0.5
 	}
 	sea_hawks = {
 		global_naval_engagement_modifier = 0.1
@@ -1195,7 +1209,7 @@ maritime_ideas = {
 	}
 	naval_fighting_instruction = {
 		blockade_efficiency = 0.25
-		privateer_efficiency = 0.1
+		privateer_efficiency = 1
 	}
 
 	ai_will_do = {
