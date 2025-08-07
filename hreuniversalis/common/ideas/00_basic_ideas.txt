@@ -78,6 +78,7 @@
 #	}
 #}
 #this one is about manufacturing goods in the state and relations with burgers. Flavor-wise is is something like Proto-mercantilism and state relations with guilds/burgers. Mechanicaly it is somethings between plutocracy and court. Adding -1 unrest and war exh cost reduction for non-money modefier too. Remove build time (its for infrastracture), global trade power (this is for trade), inflation (this one for economy), centralize state (why it is even here?), and maitanance (again this one for economy)
+
 manufacturing_ideas = {
 	category = ADM
 
@@ -398,36 +399,37 @@ indigenous_ideas = {
 		factor = 10
 	}	
 }
-
+#Some buff for inno. Most players consider it one of the two worst ideas in the game (other one is maritime). Most important thing not here, but in triggered modidiers. Now any country before renessance had -1 constant yerly inno decay unless it have full inno idea group. So it would be hard time to maintain this sweet apcr and traditions decays for any country without inno. It is also make opprtunity for add some +% inno modifiers in other places, to help maintain some inno without inno ideas. However i belive idea grop should recive even more buffs. Prestige decay, inno_gain and free policy (it is impossible even use this one until like late 3d age) should go away.
 innovativeness_ideas = {
 	category = ADM
 
 	bonus = {
-		advisor_cost = -0.2
+		advisor_cost = -0.25
 	}
 
 	patron_of_art  = {
-		prestige_decay = -0.01
+		prestige_decay = -0.025
 	}
 	empiricism = {
-		innovativeness_gain = 0.5
+		leader_cost = -0.1
+		
 	}
 	scientific_revolution = {
 		technology_cost = -0.1
-		embracement_cost = -0.1
+		embracement_cost = -0.25
 	}
 	dynamic_court = {
-		advisor_pool = 1
+		advisor_pool = 3
 	}
 	print_culture = {
-		global_institution_spread = 0.25
+		global_institution_spread = 1
 	}
 	optimism = {
 		war_exhaustion = -0.05
-		monthly_splendor = 1
+		monthly_splendor = 2
 	}
 	expanded_policies = {
-		free_policy = 1
+		monthly_reform_progress = 0.20
 	}
 
 	ai_will_do = {
