@@ -1157,7 +1157,7 @@ economic_ideas = {
 #	}
 #}
 
-# worst idea possible. Or at least many say so. Lets buff it. VN2 better for naval game play in general becouse how map is. Since piracy and explo ideas are gone, some buffs from them moved here. So, in general, this idea for large play on coastline.
+# worst idea possible. Or at least many say so. Lets buff it. VN2 better for naval game play in general becouse how map is. Since piracy and explo ideas are gone, some buffs from them moved here. So, in general, this idea for large play on coastline in mediterrain or, to lesser extent, on baltic. This one focus more on claims, trade companies, ship trade instead of coastal warfare which is for naval ideas. Global engagment is free win button, so its gone.
 maritime_ideas = {
 	category = DIP
 
@@ -1167,7 +1167,8 @@ maritime_ideas = {
 
 	bonus = {
 		cb_on_primitives = yes
-		cb_on_overseas = yes 
+		cb_on_overseas = yes
+		envoy_travel_time = -0.25
 	}
 	
 	merchant_traditions = {
@@ -1204,11 +1205,11 @@ maritime_ideas = {
 		naval_maintenance_flagship_modifier = -0.5
 	}
 	sea_hawks = {
-		global_naval_engagement_modifier = 0.1
-		admiral_cost = -0.25
+		trade_company_investment_cost = -0.25
+		trade_company_governing_cost = -0.1
 	}
 	naval_fighting_instruction = {
-		blockade_efficiency = 0.25
+		blockade_efficiency = 0.5
 		privateer_efficiency = 1
 	}
 
