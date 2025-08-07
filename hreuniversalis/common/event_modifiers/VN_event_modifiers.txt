@@ -1,3 +1,9 @@
+##IDEA GROUP MODIFIERS ##
+maritime_sailors_shock_recived_buff = {
+	shock_damage_recived = -0.1
+	is_marine_modifier = yes
+}
+
 ### VN MODIFIERS ###
 tot_dedicated_ruler = {
 	development_cost = -0.05
