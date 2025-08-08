@@ -1280,7 +1280,7 @@ maritime_ideas = {
 	}
 }
 
-
+#probably worst mil idea, especialy in VN2. Artillery buff completely useless for first 500 years. I want buff it in way that it will indeed increasing quality both land and naval units. Especially after removing most naval unit buffs from naval idea. Lets add here some drill buffs too. So its idea should be something like a jack of all trade, focused more on winnig battels, not wars. Only strategic thing here - monarch mil point. Why not?
 quality_ideas = {
 	category = MIL
 
@@ -1297,21 +1297,27 @@ quality_ideas = {
 	quality_education = {
 		army_tradition = 0.5
 		navy_tradition = 0.5
+		yearly_army_professionalism = 0.01
 	}
 	finest_of_horses = {
 		cavalry_power = 0.1
 	}
 	escort_ships = {
 		ship_durability = 0.05
+		naval_attrition = -0.25
 	}
 	naval_drill = {
 		naval_morale = 0.10
+		heavy_ship_power = 0.1
+		galley_power = 0.1
 	}
 	copper_bottoms = {
-		naval_attrition = -0.25
+		drill_decay_modifier = -0.5
+		drill_gain_modifier = 1
 	}
 	massed_battery = {
-		artillery_power = 0.1
+		land_morale = 0.10
+		monarch_military_power = 1
 	}
 
 	ai_will_do = {
