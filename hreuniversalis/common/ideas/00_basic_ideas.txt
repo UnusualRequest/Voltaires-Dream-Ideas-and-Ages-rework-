@@ -1815,46 +1815,52 @@ naval_ideas = {
 		}
 	}
 }
-
+#Court not that bad in my opinion, still i want encourage pick it more often. Lets make it strong. After all whenever you pick court you dont pick diplo or espionage. Big prestige and legitimacy buff alongside with +1 all monarch points and hier chance should help with roll perfect rulers. Republics and theocracies my also find useful big buff for devotion on rep tradition. +10% imperial autority make you real condiser pick court over diplomacy as emperor. +2 all estates privileges is insane, but i love it here.
 court_ideas = {
 	category = DIP
 
 	bonus = {
-		legitimacy = 0.5 
-		republican_tradition = 0.2
-		devotion = 0.5 
-		horde_unity = 0.5
-		meritocracy = 0.25 
+		legitimacy = 2 
+		republican_tradition = 0.5
+		devotion = 2 
+		horde_unity = 1
+		meritocracy = 1 
 		imperial_mandate = 0.1
-		imperial_authority = 0.05
+		imperial_authority = 0.10
 		monthly_cultural_unity = 0.5
 	}
 	
 	long_echo = {
 		power_projection_from_insults = 1
 		diplomatic_reputation = 1
+		heir_chance = 1
 	}
 	recognize_hierarchy = {
 		all_estate_loyalty_equilibrium = 0.1
 		loyalty_change_on_revoked = 0.05
+		allow_free_estate_privilege_revocation = yes
 	}
 	welcoming_ceremonies = {
-		prestige = 0.5
+		prestige = 1
+		prestige_decay = -0.01
 		monthly_persian_influence = 0.1
 	}
 	tranquil_coordination = {
-		reform_progress_growth = 0.2
+		reform_progress_growth = 0.25
+		national_focus_years = -15
 	}
 	respected_authority = {
-		all_estate_possible_privileges = 1
+		all_estate_possible_privileges = 2
 	}
 	palace_of_splendor = {
 		monthly_splendor = 2 
-		estate_interaction_cooldown_modifier = -0.20
+		estate_interaction_cooldown_modifier = -0.25
 	}
 	court_embassies = {
-		possible_dip_policy = 1 
-		monarch_diplomatic_power = 1 
+		monarch_admin_power = 1
+		monarch_diplomatic_power = 1
+		monarch_military_power = 1
+		monthly_heir_claim_increase = 1
 	}
 
 	ai_will_do = {
