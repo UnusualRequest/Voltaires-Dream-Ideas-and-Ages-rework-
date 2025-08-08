@@ -17,7 +17,7 @@ global_inno_decay = {
 		trigger = {
 	NOT = { full_idea_group = innovativeness_ideas }
 	}
-	innovativeness_gain = -1
+	yearly_innovativeness = -1
 }
 
 
