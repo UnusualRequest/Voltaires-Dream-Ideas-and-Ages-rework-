@@ -104,11 +104,11 @@ manufacturing_ideas = {
 	}
 	man_i6 = {
 		gold_depletion_chance_modifier = -0.5
-		monthly_gold_inflation_modifier = -0.2
+		monthly_gold_inflation_modifier = -0.8
 	}
 	man_i7 = {
-		burgers_privilege_slots = 2
-		burgers_loyalty_modifier = 0.1
+		burghers_privilege_slots = 2
+		burghers_loyalty_modifier = 0.1
 	}
 
 	ai_will_do = {
@@ -1192,6 +1192,7 @@ maritime_ideas = {
 	sheltered_ports = {
 		global_ship_repair = 0.1
 		sailor_maintenance_modifer = -0.2
+		naval_attrition = -0.25
 		
 	}
 	grand_navy = {
@@ -1205,7 +1206,7 @@ maritime_ideas = {
 	}
 	sea_hawks = {
 		trade_company_investment_cost = -0.25
-		trade_company_governing_cost = -0.1
+		trade_company_governing_cost = -0.25
 	}
 	naval_fighting_instruction = {
 		blockade_efficiency = 0.5
