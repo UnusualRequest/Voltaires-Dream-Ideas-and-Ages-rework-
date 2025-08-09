@@ -1760,7 +1760,6 @@ naval_ideas = {
 		blockade_efficiency = 0.25
 	}
 	press_gangs = {
-		global_sailors = 3000
 		sailors_recovery_speed = 0.33
 		allowed_marine_fraction = 1
 		effect = {
