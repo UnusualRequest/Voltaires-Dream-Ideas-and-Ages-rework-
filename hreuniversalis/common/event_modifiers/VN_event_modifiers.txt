@@ -1,12 +1,12 @@
 ##IDEA GROUP MODIFIERS ##
 maritime_sailors_shock_recived_buff = {
-	shock_damage_recived = -0.1
+	shock_damage_received = -0.1
 	is_marine_modifier = yes
 }
 
 naval_idea_sailors_buff = 
 {
-	shock_damage_recived = -0.1
+	shock_damage_received = -0.1
 	discipline = 0.05
 	is_marine_modifier = yes
 }
