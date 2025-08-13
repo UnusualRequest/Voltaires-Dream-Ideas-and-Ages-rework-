@@ -1,3 +1,4 @@
+#Rework of vn2 ages. In general i want ages be like from mare tall to more wide and also i want objectives be more challenging but rewards more rewarding.
 age_of_empire = {
 	start = 1000
 	papacy = 1.00
@@ -12,18 +13,20 @@ age_of_empire = {
 			imperial_mandate = 50
 		}
 		obj_large_army = {
-			num_of_infantry = 10
+			num_of_cavalry = 10
 		}
 		obj_papal_controller = {
 			allow = { religion = catholic }
-			is_papal_controller = yes
+			OR = {is_papal_controller = yes
+				  is_defender_of_faith = yes
+				}
 		}
 		obj_defender = {
 			allow = { NOT = { religion = catholic } }
 			is_defender_of_faith = yes
 		}
 		obj_50_prestige = {
-			prestige = 35
+			prestige = 90
 		}
 		obj_elector = {
 			allow = { is_part_of_hre = yes }
@@ -41,19 +44,19 @@ age_of_empire = {
 						is_core = ROOT
 						controlled_by = owner
 					}
-					development = 20
+					development = 30
 				}
 			}
 		}
 		obj_competent_ruler = {
-			ADM = 3
-			DIP = 3
-			MIL = 3
+			ADM = 5
+			DIP = 5
+			MIL = 5
 		}
 		obj_4_enemies = {
 			calc_true_if = {
 				all_country = { is_rival = ROOT }
-				amount = 4
+				amount = 7
 			}
 		}
 	}		
